@@ -1,28 +1,29 @@
 {
-  "name": "Burger",
+  "name": "sequelizedBurger",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MartyFromCary/Burger.git"
+    "url": "git+https://github.com/MartyFromCary/sequelizedBurger.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MartyFromCary/Burger/issues"
+    "url": "https://github.com/MartyFromCary/sequelizedBurger/issues"
   },
-  "homepage": "https://github.com/MartyFromCary/Burger#readme",
+  "homepage": "https://github.com/MartyFromCary/sequelizedBurger#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
     "dotenv": "^5.0.1",
     "express": "^4.16.3",
     "express-handlebars": "^3.0.0",
     "mysql2": "^1.5.3",
-    "sequelize": "^4.31.0"
+    "sequelize": "^4.37.4"
   }
 }
