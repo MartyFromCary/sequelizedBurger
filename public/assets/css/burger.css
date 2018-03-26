@@ -22,3 +22,9 @@ p {
 .panel-title {
     font-size: 20px;
 }
+
+.eaten-by {
+    text-align: right;
+    font-size: 15px;
+    color: darkgreen;
+}

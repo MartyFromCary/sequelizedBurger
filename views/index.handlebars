@@ -10,15 +10,15 @@
         <div class="col-lg-6">
             <div class="panel panel-success">
                 <div class="panel-heading">
-                    <h2 class="panel-title">Available</h2>
+                    <h2 class="panel-title">Creations</h2>
                 </div>
                 <div class="panel-body">
                     <ul>
                         {{#each burgers}} {{#unless this.devoured}}
                         <li>
                             <p>
-                                <button data-id="{{this.id}}" class="devour">Devour</button>
-                                {{this.id}}. {{this.burger_name}}
+                                <a class="btn btn-default" href="/eater/{{this.id}}">Devour</a>
+                                {{this.id}}. {{this.name}}
                             </p>
                         </li>
                         {{/unless}} {{/each}}
@@ -36,9 +36,8 @@
                     <ul>
                         {{#each burgers}} {{#if this.devoured}}
                         <li>
-                            <p>
-                                {{this.id}}. {{this.burger_name}}
-                            </p>
+                            <p>{{this.id}}. {{this.name}}</p>
+                            <p class="eaten-by">By: {{this.DevouredBy.name}}</p>
                         </li>
                         {{/if}} {{/each}}
                     </ul>
@@ -46,7 +45,6 @@
             </div>
         </div>
     </div>
-
 
     <div class="panel panel-warning">
         <div class="panel-heading">

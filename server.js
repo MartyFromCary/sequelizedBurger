@@ -13,9 +13,10 @@ app.set("view engine", "handlebars");
 
 require("./routes/burger-api-routes")(app);
 
+const force = false;
 const PORT = process.env.PORT || 3000;
 require("./models")
-  .sequelize.sync({ force: false })
+  .sequelize.sync({ force })
   .then(() =>
     app.listen(PORT, () => console.log(`App listening on PORT ${PORT}`))
   );
